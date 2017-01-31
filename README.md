@@ -1,1 +1,2 @@
-# 0x1d-laser-spirograph-client-android
+# laser-spirograph-client-android
+code is based on https://github.com/johnhowe/BlueTerm
