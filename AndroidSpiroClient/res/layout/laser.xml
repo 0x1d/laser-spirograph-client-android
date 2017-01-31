@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+	android:id="@+id/RelativeLayout01" 
+	android:layout_width="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_height="wrap_content">
+	
+
+
+<TextView 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:layout_toLeftOf="@+id/Detailed" 
+	android:layout_below="@+id/Title" 
+	android:layout_alignLeft="@+id/Title" 
+	android:textStyle="bold" 
+	android:id="@+id/Module" 
+	android:text="Motor Speed">
+</TextView>
+<SeekBar 
+	android:layout_height="wrap_content" 
+	android:id="@+id/MotorSeekBar01" 
+	android:layout_width="fill_parent" 
+	android:padding="13px" 
+	android:saveEnabled="true" 
+	android:layout_below="@+id/Module" 
+	android:max="127">
+</SeekBar>
+
+
+<SeekBar 
+	android:layout_height="wrap_content" 
+	android:layout_below="@+id/MotorSeekBar01" 
+	android:layout_width="fill_parent" 
+	android:padding="13px" 
+	android:id="@+id/MotorSeekBar02" 
+	android:layout_alignLeft="@+id/MotorSeekBar01" 
+	android:layout_alignRight="@+id/MotorSeekBar01"
+	android:max="127">
+</SeekBar>
+<SeekBar 
+	android:layout_height="wrap_content" 
+	android:layout_below="@+id/MotorSeekBar02" 
+	android:layout_width="fill_parent" 
+	android:padding="13px" 
+	android:id="@+id/MotorSeekBar03" 
+	android:layout_alignLeft="@+id/MotorSeekBar02" 
+	android:layout_alignRight="@+id/MotorSeekBar02"
+	android:max="127">
+</SeekBar>
+
+<TextView 
+	android:layout_below="@+id/MotorSeekBar03" 
+	android:text="Laser Frequency" 
+	android:textStyle="bold" 
+
+	android:id="@+id/TextView01" 
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	android:layout_alignLeft="@+id/MotorSeekBar03" 
+	android:layout_alignRight="@+id/MotorSeekBar03">
+</TextView>
+<SeekBar 
+	android:layout_height="wrap_content" 
+	android:padding="13px" 
+	android:layout_below="@+id/TextView01" 
+	android:layout_width="wrap_content" 
+	android:id="@+id/SeekBar01" 
+	android:layout_alignLeft="@+id/TextView01" 
+	android:layout_alignRight="@+id/TextView01">
+</SeekBar>
+
+
+
+
+
+
+
+<Button 
+android:layout_height="wrap_content" 
+android:id="@+id/LastPresetButton" 
+android:text="-" android:layout_width="80px" 
+
+android:layout_below="@+id/SeekBar01" 
+android:layout_alignLeft="@+id/SeekBar01">
+</Button><Button android:layout_height="wrap_content" android:id="@+id/NextPresetButton" android:text="+" android:layout_width="80px" android:layout_toRightOf="@+id/LastPresetButton" android:layout_alignTop="@+id/LastPresetButton" android:layout_alignBottom="@+id/LastPresetButton"></Button>
+<Spinner android:layout_height="wrap_content" android:layout_width="145px" android:id="@+id/Spinner01" android:layout_toRightOf="@+id/NextPresetButton" android:layout_alignTop="@+id/NextPresetButton" android:layout_alignBottom="@+id/NextPresetButton"></Spinner>
+
+
+
+
+
+
+<EditText 
+android:gravity="center"
+android:id="@+id/EditText01" android:text="" android:layout_toRightOf="@+id/Spinner01" android:layout_width="180px" android:layout_height="wrap_content" android:layout_alignTop="@+id/Spinner01" android:layout_alignBottom="@+id/Spinner01"></EditText>
+
+<Button 
+android:id="@+id/Reset" 
+android:text="0 | 0 | 0 | 0" 
+android:layout_width="235px" 
+android:layout_height="wrap_content" 
+android:layout_toRightOf="@+id/EditText01" 
+android:layout_alignTop="@+id/EditText01" 
+android:layout_alignBottom="@+id/EditText01">
+</Button>
+
+<Button android:layout_height="wrap_content" android:id="@+id/Send" android:visibility="visible" android:text="Send" android:layout_width="wrap_content" android:layout_toRightOf="@+id/Reset" android:layout_alignTop="@+id/Reset" android:layout_alignBottom="@+id/Reset"></Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
